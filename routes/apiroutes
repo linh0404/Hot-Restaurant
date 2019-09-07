@@ -1,1 +1,0 @@
-app.post("../routes/customer",(req,res)
