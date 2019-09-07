@@ -10,8 +10,8 @@ $("#submit").on("click", function(event) {
     customer_UniqueID: $("#uniqueid-input").val().trim(),
     }
 
-    $.post( "api/reserve", data );
+    $.post( "/api/reserve", data );
     
 });
-
+console.log("make.js test");
 
