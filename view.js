@@ -7,19 +7,13 @@ $("#search-btn").on("click", function() {
   // You can read more about RegEx Patterns later https://www.regexbuddy.com/regex.html
   searchedCharacter = searchedCharacter.replace(/\s+/g, "").toLowerCase();
 
-  $.get("/api/characters/" + searchedCharacter, function(data) {
+  $.get("/api/reservations/", function(data) {
     console.log(data);
-    if (data) {
-      $("#stats").show();
-      $("#name").text(data.name);
-      $("#role").text(data.role);
-      $("#age").text(data.age);
-      $("#force-points").text(data.forcePoints);
-    } else {
-      $("#name").text(
-        "The force is not strong with this one. Your character was not found."
-      );
-      $("#stats").hide();
-    }
+
+    $("#stats").show();
+    $("#customerName").text(data.name);
+    $("#customerPhone").text(data.phoneNo);
+    $("#customerEmail").text(data.email);
+    $("#customerID").text(data.uniqueId);
   });
 });
