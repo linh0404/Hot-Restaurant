@@ -14,8 +14,11 @@ function htmlroutes(app){
         res.sendFile(path.join(__dirname,"../make.html"));
     });
 
-    app.get("*",function(req,res){
+    app.get("/",function(req,res){
         res.sendFile(path.join(__dirname,"../index.html"));
+    });
+    app.get("/make.js",function(req,res){
+        res.sendFile(path.join(__dirname,"../make.js"));
     });
 }
 
