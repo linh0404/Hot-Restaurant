@@ -7,7 +7,7 @@ var path = require("path");
 // Sets up the Express App
 // =============================================================
 var app = express();
-// app.use("/api",api);
+
 var PORT = 3000;    
 
 // Sets up the Express app to handle data parsing
