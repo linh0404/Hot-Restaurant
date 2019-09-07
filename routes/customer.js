@@ -1,5 +1,3 @@
-
-
 var customers = [
     {
 customer_Name:"John",

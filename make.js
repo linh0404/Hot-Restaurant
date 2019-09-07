@@ -4,10 +4,10 @@ $("#submit").on("click", function(event) {
 
     //Grabbed values from text boxes
     var data = {
-    name: $("#name-input").val().trim(),
-    phoneNo: $("#phone-input").val().trim(),
-    email: $("#email-input").val().trim(),
-    uniqueId: $("#uniqueid-input").val().trim(),
+    customer_Name: $("#name-input").val().trim(),
+    phcustomer_Phone: $("#phone-input").val().trim(),
+    customer_Email: $("#email-input").val().trim(),
+    customer_UniqueID: $("#uniqueid-input").val().trim(),
     }
 
     $.post( "api/reserve", data );
