@@ -11,10 +11,4 @@ customer_UniqueID:"12345"
 ]
 
 
-module.exports = {
-    customer_Name: customer_Name,
-    customer_Phone: customer_Phone,
-    customer_Email:customer_Email,
-    customer_UniqueID:customer_UniqueID
-  };
-  
+module.exports = customers
